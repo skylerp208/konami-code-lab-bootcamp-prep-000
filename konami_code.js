@@ -13,6 +13,15 @@ const codes = [
 
 function init() {
   document.addEventListener('keydown', function(e) {
-    for (let i = 0; )
+   let key = e.key
+   let i = 0
+   if (key === codes[i]) {
+     i++;
+     if (i === codes.length){
+       alert('You did it bb');
+       index = 0
+     }
+   } else {
+     index = 0
+   } 
   })
-}
